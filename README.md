@@ -1,6 +1,3 @@
-Escola de Artes Marciais
-
-- Código
 
 package Entidade;
 
