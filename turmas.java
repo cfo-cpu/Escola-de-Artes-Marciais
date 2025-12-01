@@ -1,4 +1,4 @@
-package Aluno1;
+package entidade;
 
 public class Turma {
 	private String horarios;
