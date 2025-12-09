@@ -9,8 +9,9 @@ public class Aluno {
 	private String telefone;
 	private String graduacao;
 	private String dataDeNascimento;
+	private Mensalidade mensalidade;
 	
-	public Aluno(String cpf, String matricula, String nome, double peso, String email, String telefone, String graduacao, String dataDeNascimento) {
+	public Aluno(String cpf, String matricula, String nome, double peso, String email, String telefone, String graduacao, String dataDeNascimento, Mensalidade mensalidade) {
 		this.cpf = cpf;
 		this.matricula = matricula;
 		this.nome = nome;
@@ -19,6 +20,15 @@ public class Aluno {
 		this.telefone = telefone;
 		this.graduacao = graduacao;
 		this.dataDeNascimento = dataDeNascimento;
+		this.mensalidade = mensalidade;
+	}
+
+	public Mensalidade getMensalidade() {
+		return mensalidade;
+	}
+
+	public void setMensalidade(Mensalidade mensalidade) {
+		this.mensalidade = mensalidade;
 	}
 
 	public String getCpf() {
@@ -85,9 +95,11 @@ public class Aluno {
 		System.out.println("Graduação: " + this.graduacao);
 		System.out.println("Data de Nascimento: " + this.dataDeNascimento);
 		System.out.println("Peso: " + this.peso);
+		System.out.println("Mensalidade: " + this.mensalidade);
 		System.out.println("-------THE END-------");
 	}
 	
 	}
+
 
 
