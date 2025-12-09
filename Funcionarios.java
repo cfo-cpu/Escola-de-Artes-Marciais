@@ -8,21 +8,18 @@ public abstract class Funcionarios {
 	protected String CPF;
 	protected String nome;
 	protected String dataNascimento;
-	protected String agencia;
-	protected String numeroConta;
-	protected int experiencia;
+	protected Banco Banco;
 	protected String email;
 	protected List<String> telefones;
 	
 	public Funcionarios (String matricula, String CPF, String nome, String dataNascimento,
-			String agencia, String numeroConta, int experiencia, String email, 
+			Banco banco, String email, 
 			List<String> telefones) {
 		this.matricula = matricula;
 		this.CPF = CPF;
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
-		this.agencia = agencia;
-		this.numeroConta = numeroConta;
+		this.banco = banco;
 		this.experiencia = experiencia;
 		this.email = email;
 		this.telefones = (telefones != null) ? telefones : new ArrayList<>();
@@ -42,17 +39,8 @@ public abstract class Funcionarios {
 	public String getDataNascimento() {
 		return dataNascimento;
 	}
-	public String getAgencia() {
-		return agencia;
-	}
-	public String getNumeroConta() {
-		return numeroConta;
-	}
-	public int getExperiencia() {
-		return experiencia;
-	}
-	public void setExperiencia(int experiencia) {
-		this.experiencia = experiencia;
+	public String getBanco() {
+		return banco;
 	}
 	public String getEmail() {
 		return email;
@@ -74,3 +62,4 @@ public abstract class Funcionarios {
 	}
 
 }
+
