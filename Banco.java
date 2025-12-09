@@ -2,8 +2,8 @@ package Entidade;
 
 public class Banco{
 
-    private String agencia;
-    private String numeroConta;
+    protected String agencia;
+    protected String numeroConta;
 
     public Banco( String agencia, String numeroConta){
             this.agencia = agencia;
