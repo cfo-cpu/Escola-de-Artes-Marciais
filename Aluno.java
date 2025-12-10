@@ -7,26 +7,28 @@ public class Aluno {
 	private double peso;
 	private String email;
 	private String telefone;
-	private String graduacao;
+	private Modalidade modalidade;
 	private String dataDeNascimento;
 	private Mensaliade mensalidade;
 	
-	public Aluno(String cpf, String matricula, String nome, double peso, String email, String telefone, String graduacao, String dataDeNascimento, Mensalidade mensalidade) {
+	public Aluno(String cpf, String matricula, String nome, double peso, String email, String telefone, Modalidade modalidade, String dataDeNascimento, Mensalidade mensalidade) {
 		this.cpf = cpf;
 		this.matricula = matricula;
 		this.nome = nome;
 		this.peso = peso;
 		this.email = email;
 		this.telefone = telefone;
-		this.graduacao = graduacao;
 		this.dataDeNascimento = dataDeNascimento;
 		this.mensalidade = mensalidade;
+		this.modalidade = modalidade;
 	}
 
 	public String getCpf() {
 		return cpf;
 	}
-	
+	public Modalidade getModalidade(){
+		return modalidade;
+	}
 	
 	public String getMatricula() {
 		return matricula;
@@ -49,9 +51,6 @@ public class Aluno {
 		return telefone;
 	}
 	
-	public String getGraduacao() {
-		return graduacao;
-	}
 	
 	public String getDataDeNascimento() {
 		return dataDeNascimento;
@@ -94,6 +93,7 @@ public class Aluno {
 	}
 	
 	}
+
 
 
 
