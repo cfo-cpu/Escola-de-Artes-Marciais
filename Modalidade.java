@@ -9,16 +9,21 @@ public class Modalidade {
     private String nome;
     private String nivel;
     private String graduacao;
+    private String especialidade;
 
-    public Modalidade(String id, String nome, String nivel, String graduacao) {
+    public Modalidade(String id, String nome, String nivel, String graduacao, String especialidade) {
         this.id = id;
         this.nome = nome;
         this.nivel = nivel;
         this.graduacao = graduacao;
+        this.especialidade;
     }
 
     public String getId() {
         return id;
+    }
+     public String getEspecialidade() {
+        return especialidade;
     }
 
     public String getNome() {
@@ -33,6 +38,9 @@ public class Modalidade {
     }
     public void setGraduacao(String graduacao) {
         this.graduacao = graduacao;
+    }
+    public void setEspecialidade(String especialidade) {
+        this.espeialidade = especialidade;
     }
 
     public String getNivel() {
