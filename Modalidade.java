@@ -5,15 +5,17 @@ import java.util.List;
 
 public class Modalidade {
 
-    private String idModalidade;
+    private String id;
     private String nome;
     private String nivel;
+    private String graduacao;
     private List<Turma> turmas;
 
-    public Modalidade(String idModalidade, String nome, String nivel, List<Turma> turmas) {
-        this.idModalidade = idModalidade;
+    public Modalidade(String id, String nome, String nivel, List<Turma> turmas, String graduacao) {
+        this.id = id;
         this.nome = nome;
         this.nivel = nivel;
+        this.graduacao = graduacao;
         this.turmas = (turmas != null) ? turmas : new ArrayList<>();
     }
 
@@ -24,9 +26,15 @@ public class Modalidade {
     public String getNome() {
         return nome;
     }
+    public String getGraduacao() {
+        return graduacao;
+    }
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+    public void setGraduacao(String graduacao) {
+        this.graduacao = graduacao;
     }
 
     public String getNivel() {
