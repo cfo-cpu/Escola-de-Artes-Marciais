@@ -6,7 +6,7 @@ public class recpcionista extends funcionarios{
 
     public recpcionista(String matricula, String CPF, String nome, String dataNascimento,
 			String agencia, String numeroConta, int experiencia, String email, 
-			List<String> telefones, float i, String turno) {
+			List<String> telefones, float id, String turno) {
             super(matricula, CPF, nome, dataNascimento, agencia, numeroConta, experiencia, email, telefones);
 
             this.id=id;
