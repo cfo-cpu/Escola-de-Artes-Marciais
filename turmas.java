@@ -3,12 +3,12 @@ package Entidade;
 public class Turma {
 	private String horarios;
 	private String niveis;
-	private int  idturma;
+	private int  id;
 	
 	public Turma(String horarios, String niveis, int idturma) {
 		this.horarios = horarios;
 		this.niveis = niveis;
-		this.idturma = idturma;
+		this.id = id;
 	}
 	
 	public String getHorarios() {
@@ -27,12 +27,12 @@ public class Turma {
 		this.niveis = niveis;
 	}
 	
-	public int getIdturma() {
-		return idturma;
+	public int getId() {
+		return id;
 	}
 	
-	public void setIdturma(int idturma) {
-		this.idturma = idturma;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 }
