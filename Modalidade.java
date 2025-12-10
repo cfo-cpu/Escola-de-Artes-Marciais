@@ -9,18 +9,16 @@ public class Modalidade {
     private String nome;
     private String nivel;
     private String graduacao;
-    private List<Turma> turmas;
 
-    public Modalidade(String id, String nome, String nivel, List<Turma> turmas, String graduacao) {
+    public Modalidade(String id, String nome, String nivel, String graduacao) {
         this.id = id;
         this.nome = nome;
         this.nivel = nivel;
         this.graduacao = graduacao;
-        this.turmas = (turmas != null) ? turmas : new ArrayList<>();
     }
 
-    public String getIdModalidade() {
-        return idModalidade;
+    public String getId() {
+        return id;
     }
 
     public String getNome() {
@@ -45,15 +43,4 @@ public class Modalidade {
         this.nivel = nivel;
     }
 
-    public List<Turma> getTurmas() {
-        return turmas;
-    }
-
-    public void adicionarTurma(Turma turma) {
-        if (turma != null) turmas.add(turma);
-    }
-
-    public void removerTurma(Turma turma) {
-        if (turma != null) turmas.remove(turma);
-    }
 }
