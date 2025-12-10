@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Professor extends Funcionarios {
-	protected String idProfessor;
+	protected String id;
 	protected String graduacao;
 	protected String especialidade;
 	protected String cargaHoraria;
@@ -12,18 +12,18 @@ public class Professor extends Funcionarios {
 	
 	public Professor (String matricula, String CPF, String nome, String dataNascimento,
 			String agencia, String numeroConta, int experiencia, String email, 
-			List<String> telefones, String idProfessor, String graduacao, 
+			List<String> telefones, String id, String graduacao, 
 			String especialidade, String cargaHoraria, List<Turma> turmas) {
 		super(matricula, CPF, nome,  dataNascimento, agencia, numeroConta,
 				experiencia, email, telefones);
-		this.idProfessor = idProfessor;
+		this.id = id;
 		this.graduacao = graduacao;
 		this.especialidade = especialidade;
 		this.cargaHoraria = cargaHoraria;
 		this.turmas = (turma != null) ? turma : new ArrayList<>();
 	}
-	public String getIdProfessor() {
-		return idProfessor;
+	public String getId() {
+		return id;
 	}
 	public String getGraduacao() {
 		return graduacao;
@@ -58,3 +58,4 @@ public class Professor extends Funcionarios {
 	}
 
 }
+
